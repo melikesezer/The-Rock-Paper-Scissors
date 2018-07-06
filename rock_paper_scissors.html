@@ -1,0 +1,100 @@
+<!-- 
+        Melike Sezer
+        06/07/2018
+        The Rock, Paper, Scissors Game
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>The Rock, Paper, Scissors Game Project</title>
+</head>
+<body>
+
+<h1><center>The Rock, Paper, Scissors Game</center></h1>
+
+<div class="game">
+
+    <script>
+        var userChoice = prompt("Please enter your choice 'rock, paper or scissors'");
+        if (! userChoice)
+        {
+            document.write("<b>Invalid choice!...</b>");
+        } 
+        else 
+        {
+            document.write("<p><b>Player1  :</b>" + " " + userChoice + "</p>");
+        }
+       
+        var compChoice = Math.random();  // Computer choice
+        if (compChoice < 0.34) 
+        {
+            compChoice = "scissors";
+        }
+        else if(compChoice <= 0.67) 
+        {
+            compChoice = "paper";
+        } 
+        else
+        {
+            compChoice = "rock";
+        }
+   
+        document.write("<p><b>Computer:</b>" + " " + compChoice + "</p>");
+        
+        var compare = function(userChoice,comChoice)
+        {
+            if (userChoice == comChoice) 
+            {
+                return "IT'S A TIE"; //tie
+            }
+            
+            if (userChoice == "paper" || userChoice == "PAPER") 
+            {
+                if (comChoice == "rock" )
+                {
+                    return "USER WIN :)";   // paper wins
+                } 
+                else 
+                {
+                    return "COMPUTER WIN :(";  // scissors wins
+                }
+            }
+            
+            if (userChoice == "rock" || userChoice == "ROCK" ) 
+            {
+                if (comChoice == "scissors")
+                {
+                    return "USER WIN :)";   // rock wins
+                } 
+                else
+                {
+                    return "COMPUTER WIN :(";  // paper wins
+                }
+            }
+            
+            if (userChoice == "scissors" || userChoice == "SCISSORS") 
+            {
+                if (comChoice == "rock") 
+                {
+                    return "COMPUTER WIN :(";  // rock wins
+                } 
+                else 
+                {
+                    return "USER WIN :) ";   // scissors wins
+                }
+            }
+        
+        };
+        var results = compare(userChoice,compChoice);
+        document.write("<b><br><hr><br><center>" + results);
+    </script>
+</div>
+
+</body>
+</html>
