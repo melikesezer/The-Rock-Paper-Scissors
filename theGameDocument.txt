@@ -1,0 +1,20 @@
+
+Taþ, Kaðýt, Makas Oyunu
+
+Proje Javascript dili ile yapýlmýþtýr. 
+Oyunun baþlamasý için öncelikle kullanýcýnýn taþ, kaðýt veya makas'tan herhangi bir seçeneði girmesi gerekmektedir. (Eðer herhangi bir seçenek girilmediði durumda oyun sonlanýr.) 
+Kullanýcý bir deðer girdikten sonra, bilgisayar; taþ, kaðýt, makas'tan herhangi birini random olarak üretir ve kullanýcýnýn girmiþ olduðu seçenek ile kýyaslama yapar.
+
+- Eðer kullanýcý ile bilgisayar ayný seçeneði seçmiþ ise; oyun beraberlikle sonuçlanýr,
+- Eðer kullanýcý 'kaðýt' seçtiyse ve bilgisayar random olarak 'taþ' seçeneðini seçtiyse; kullanýcý oyunu kazanýr,
+- Eðer kullanýcý 'kaðýt' seçtiyse ve bilgisayar random olarak 'makas' seçeneðini seçtiyse; kullanýcý oyunu kaybeder;
+- Eðer kullanýcý 'taþ' seçtiyse ve bilgisayar random olarak 'makas' seçeneðini seçtiyse; kullanýcý oyunu kazanýr,
+- Eðer kullanýcý 'taþ' seçtiyse ve bilgisayar random olarak 'kaðýt' seçeneðini seçtiyse; kullanýcý oyunu kaybeder;
+- Eðer kullanýcý 'makas' seçtiyse ve bilgisayar random olarak 'taþ' seçeneðini seçtiyse; kullanýcý oyunu kazanýr,
+- Eðer kullanýcý 'makas' seçtiyse ve bilgisayar random olarak 'kaðýt' seçeneðini seçtiyse; kullanýcý oyunu kaybeder.
+
+
+
+
+
+
